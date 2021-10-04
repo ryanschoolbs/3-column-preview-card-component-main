@@ -13,7 +13,7 @@ html {
 body {
    font-family: "Lexend Deca", sans-serif;
    background-color: hsl(0, 0%, 95%);
-   height: 100vh;
+   min-height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -40,7 +40,7 @@ img {
 }
 
 button {
-   border: none;
+   border: solid 2.5px;
    border-radius: 20px;
    background-color: hsl(0, 0%, 95%);
    padding: 10px 25px;
@@ -50,16 +50,17 @@ button {
 button:hover {
    mix-blend-mode: normal;
    color: hsl(0, 0%, 95%);
-   outline: hsl(0, 0%, 95%) 2.5px solid;
+   border: hsl(0, 0%, 95%) 2.5px solid;
    background-color: transparent;
 }
 
 .container {
    max-width: 90vw;
-   /* min-height: 80vh; */
+   /* max-height: 100%; */
    margin: 4rem auto;
    border-radius: 10px;
    overflow: auto;
+   -webkit-overflow-scrolling: touch;
 }
 
 .col {
