@@ -59,7 +59,7 @@ button:hover {
    max-height: 80vh;
    margin: 4rem auto;
    border-radius: 10px;
-   overflow: scroll;
+   overflow: auto;
 }
 
 .col {
